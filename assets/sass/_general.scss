@@ -1,0 +1,47 @@
+@import '_mixin.scss';
+@import '_variables.scss';
+@import 'https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text&family=Open+Sans:wght@300&display=swap';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+h1,h2,h3,h4{
+    font-family: $libre-display;
+    color: $grey;
+}
+h1{
+    font-size: 4em;
+    margin-bottom: .2em;
+}
+h2{
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+h3{
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    letter-spacing: 5px;
+}
+h4{
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    letter-spacing: 5px;
+}
+p{
+    font-family: $open-sans;
+    font-size: 1.1em;
+}
+img{
+    width: 100%;
+}

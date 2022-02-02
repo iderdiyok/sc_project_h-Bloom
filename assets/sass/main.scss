@@ -1,0 +1,81 @@
+@import '_general.scss';
+@import '_mixin.scss';
+@import '_variables.scss';
+
+header{
+    height: 20vh;
+    border-bottom: 1px solid $light-grey;
+    text-align: center;
+    ul{
+        @include flex-center;
+        a{
+            font-family: $open-sans;
+            font-size: 1.5em;
+        }
+        .active{
+            text-decoration: underline
+        }
+    }
+}
+main{
+    @include w-80;
+    padding: 2em 0;
+    .home{
+        @include w-80;
+        text-align: center;
+    }
+    .options{
+        @include w-70;
+        text-align: center;
+        padding: 3em 0;
+        .all-options{
+            @include flex-center;
+            margin-bottom: 2em;
+            p{
+                margin-bottom: 2em;
+            }
+            ul{
+                font-family: $open-sans;
+                font-size: 1.2em;
+                li{
+                    margin-bottom: 1em
+                }
+            }
+        }
+        a{
+            @include w-65;
+            padding: .3em 0;
+            display: block;
+            font-family: $libre-display;
+            font-size: 1.3em;
+            background-color: $grey;
+            color: $white;
+            border-radius: 5px;
+            &:hover{
+                background-color: $white;
+                color: $grey;
+                border: 1px solid $grey;
+                text-decoration: none;
+            }
+        }
+    }
+    .img-text{
+        p{
+            margin-top: 3em;
+        }
+    }    
+}
+footer{
+    height: 20vh;
+    background-color: $light-grey;
+    @include flex-start;
+    ul{
+        @include w-70;
+        @include flex-start;
+        font-size: 1.1em;
+        gap: 5em;
+        a{
+            font-family: $libre-text;
+        }
+    }
+}
